@@ -43,11 +43,14 @@ export default class Service {
       const lowerRight = prediction.annotations.rightEyeUpper0;
       const upperRight = prediction.annotations.rightEyeLower0;
       const rightEAR = this.#getEar(upperRight, lowerRight);
+      this.#handleRightEyeBlinked(rightEAR)
+
       // Left eye parameters
       const lowerLeft = prediction.annotations.leftEyeUpper0;
       const upperLeft = prediction.annotations.leftEyeLower0;
       const leftEAR = this.#getEar(upperLeft, lowerLeft);
-  
+      this.#handleLeftEyeBlinked(leftEAR)
+
       // True if the eye is closed
       const blinked = leftEAR <= EAR_THRESHOLD && rightEAR <= EAR_THRESHOLD;
       if (!blinked) continue
@@ -56,6 +59,18 @@ export default class Service {
     }
 
     return false
+  }
+
+  #handleLeftEyeBlinked(leftEAR) {
+    if (leftEAR <= EAR_THRESHOLD) {
+      console.log('left eye blinked.')
+    }
+  }
+
+  #handleRightEyeBlinked(rightEAR) {
+    if (rightEAR <= EAR_THRESHOLD) {
+      console.log('right eye blinked.')
+    }
   }
 
   #estimateFaces(video) {
