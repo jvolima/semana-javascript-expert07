@@ -32,7 +32,7 @@ Marque esse projeto com uma estrela 🌟
 ### Desafios
 - [x] - Aula 01 - Diferenciar piscada de olhos entre olho direito e esquerdo e atualizar log para mostrar qual olho que piscou.
 - [x] - Aula 02 - Reconhecer gestos de mãos individuais e printar no log
-- [] - Aula 03 - Corrigir o z-index da mão nos popups
+- [x] - Aula 03 - Corrigir o z-index da mão nos popups
 - [] - Aula 04 - A definir
 
 ### Considerações
