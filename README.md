@@ -37,7 +37,10 @@ Marque esse projeto com uma estrela 🌟
 - [x] - Aula 01 - Diferenciar piscada de olhos entre olho direito e esquerdo e atualizar log para mostrar qual olho que piscou.
 - [x] - Aula 02 - Reconhecer gestos de mãos individuais e printar no log
 - [x] - Aula 03 - Corrigir o z-index da mão nos popups
-- [] - Aula 04 - A definir
+- [] - Aula 04 - Desafio plus: implementas testes unitários e alcançar 100% de coverage (avançado)
+Minhas ideias:
+- [] - Tornar barra de pesquisa clicável pelo gesto de pinça 🤏🏻
+- [] - Mudar volume de vídeo com algum gesto
 
 ### Links mostrados nos aulas:
 - Reuni todos os links em [referências](./referencias.md)
